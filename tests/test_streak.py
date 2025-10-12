@@ -27,3 +27,6 @@ def test_single_element_streaks():
 
 def test_long_list():
     assert longest_positive_streak([1] * 1000) == 1000
+
+def test_mixed_numbers_with_streak_in_middle():
+    assert longest_positive_streak([-1, 0, 1, 2, 3, 4, -5, 6, 7]) == 4
